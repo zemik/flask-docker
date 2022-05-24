@@ -1,6 +1,3 @@
-https://github.com/Dev-Elie/Flask-Docker-App/blob/main/README.md
-https://www.freecodecamp.org/news/how-to-dockerize-a-flask-app/
-
 python3 -m venv venv
 The virtual environment was not created successfully because ensurepip is not
 available.  On Debian/Ubuntu systems, you need to install the python3-venv
@@ -11,11 +8,9 @@ package using the following command.
 You may need to use sudo with that command.  After installing the python3-venv
 package, recreate your virtual environment.
 
-Failing command: ['/home/zmk/workspace/flask-docker/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']
-
 sudo apt install python3.10-venv
 
-pip install flask                   
+pip install flask
 zsh: command not found: pip
 
 sudo apt install python3-pip
@@ -25,7 +20,6 @@ source: Нет такого файла или каталога: venv/bin/activat
 
 docker docker build --tag python-docker .
 
-
 docker build --tag python-docker .
 Sending build context to Docker daemon  21.02MB
 Step 1/6 : FROM python:3.9.2
@@ -63,7 +57,6 @@ Removing intermediate container e1548fb79337
 Successfully built 9cd00598f306
 Successfully tagged python-docker:latest
 
-
 docker build --tag python-docker .
 Sending build context to Docker daemon  21.02MB
 Step 1/6 : FROM python:3.9.2
@@ -100,7 +93,6 @@ Removing intermediate container e1548fb79337
  ---> 9cd00598f306
 Successfully built 9cd00598f306
 Successfully tagged python-docker:latest
-
 
 source venv/bin/activate
 
@@ -116,14 +108,7 @@ Installing collected packages: pip
       Successfully uninstalled pip-22.0.2
 Successfully installed pip-22.1
 
-docker run python-docker
-/usr/local/bin/python3: No module named flask
-
-nano Dockerfile
-
-nano requirements.txt 
-
-docker docker build --tag python-docker . 
+docker build --tag python-docker . 
 Sending build context to Docker daemon  22.16MB
 Step 1/6 : FROM python:3.9.2
  ---> 587b1bc803b3
